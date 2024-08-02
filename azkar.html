@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css" class="rel">
+    <link rel="stylesheet" href="css/bootstrap.min.css" class="rel">
+    <link rel="stylesheet" href="css/azkar.css">
+</head>
+
+<body>
+    <div class="container mt-5 ">
+        <div class="  text-center p-3 mb-1" style="direction: rtl;">
+
+            <div class="buttons d-flex justify-content-around align-items-center ">
+                <button type="button" class="btn btn-success btn-circle btn-xl mb-1 active" id="btn1"> <span>أذكار
+                        الصباح</span></button>
+                <button type="button" class="btn btn-success  btn-circle btn-xl mb-1 " id="btn2"> <span>أذكار
+                        المساء</span></button>
+            </div>
+
+        </div>
+    </div>
+    <div class="container " id="azkarElsabah" style="display: none;">
+        <header class="col-xs-8 col-sm-12 text-center  mt-3">
+            <div class="p-3 text-white">أذكار الصباح</div>
+        </header>
+        <div class="card text-center   p-3 mb-1" style="direction: rtl;">
+            <div class="mix row ">
+                <div class="counter col-3 countt">
+
+                    <button class="btn btn-success btn-lg count">
+
+                        3
+                    </button>
+                    <div id="icon">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </div>
+
+
+                </div>
+                <div class="zekr col-9 mb-5 ">
+                    <div style="height: 155px;">
+                        <div class="zekr">
+                            <div dir="rtl ">أَعُوذُ بِاللهِ مِنْ الشَّيْطَانِ الرَّجِيمِ</div>
+                            اللّهُ لاَ إِلَـهَ إِلاَّ هُوَ الْحَيُّ الْقَيُّومُ لاَ تَأْخُذُهُ سِنَةٌ وَلاَ نَوْمٌ لَّهُ
+                            مَا فِي السَّمَاوَاتِ وَمَا فِي الأَرْضِ مَن ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلاَّ بِإِذْنِهِ
+                            يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلاَ يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ
+                            إِلاَّ بِمَا شَاء وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالأَرْضَ وَلاَ يَؤُودُهُ حِفْظُهُمَا
+                            وَهُوَ الْعَلِيُّ الْعَظِيمُ.
+
+                        </div>
+                        <div class="text-justify mt-2 mb-4 text-success">
+                            <span>من قالها حين يصبح أجير من الجن حتى يمسى ومن قالها حين يمسى أجير من الجن حتى
+                                يصبح.</span>
+                            <span class="fa fa-info-circle text-info"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix row ">
+
+                <div class="counter col-3 countt">
+
+                    <button class="btn btn-success btn-lg count">
+
+                        3
+                    </button>
+                    <div id="icon">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </div>
+
+
+                </div>
+                <div class="zekr col-9 mt-5 mb-5 ">
+                    <div style="height: 155px;">
+                        <div class="zekr">
+                            <div dir="rtl"><span class="text-warning d-block">بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم</span>
+                                قُلْ هُوَ ٱللَّهُ أَحَدٌ، ٱللَّهُ ٱلصَّمَدُ، لَمْ يَلِدْ وَلَمْ يُولَدْ، وَلَمْ يَكُن
+                                لَّهُۥ
+                                كُفُوًا أَحَدٌۢ.
+                            </div>
+
+                        </div>
+                        <div class="text-justify  text-success">
+                            <span>من قالها حين يصبح وحين يمسى كفته من كل شىء (الإخلاص والمعوذتين).</span>
+                            <span class="fa fa-info-circle text-info"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix row">
+
+
+                <div class="counter col-3 countt">
+
+                    <button class="btn btn-success btn-lg count">
+
+                        3
+                    </button>
+                    <div id="icon">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </div>
+
+
+                </div>
+                <div class="zekr col-9 mt-5 mb-5">
+                    <div style="height: 155px;">
+                        <div class="zekr">
+                            <div dir="rtl"><span class="text-warning d-block">بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم</span>
+                                قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ، مِن شَرِّ مَا خَلَقَ، وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ،
+                                وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِى ٱلْعُقَدِ، وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix row">
+
+
+                <div class="counter col-3 countt">
+
+                    <button class="btn btn-success btn-lg count">
+
+                        3
+                    </button>
+                    <div id="icon">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </div>
+
+
+                </div>
+                <div class="zekr col-9">
+                    <div style="height: 155px;">
+                        <div class="zekr">
+                            <div dir="rtl"><span class="text-warning d-block">بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم</span>
+                                قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ، مِن شَرِّ مَا خَلَقَ، وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ،
+                                وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِى ٱلْعُقَدِ، وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix row">
+
+
+                <div class="counter col-3 countt">
+
+                    <button class="btn btn-success btn-lg count">
+
+                        3
+                    </button>
+                    <div id="icon">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </div>
+
+
+                </div>
+                <div class="zekr col-9 mt-5 mb-5">
+                    <div style="height: 155px;">
+                        <div class="zekr pt-5">
+                            <div dir="rtl">أَصْـبَحْنا وَأَصْـبَحَ المُـلْكُ لله وَالحَمدُ لله ، لا إلهَ إلاّ اللّهُ
+                                وَحدَهُ لا شَريكَ لهُ، لهُ المُـلكُ ولهُ الحَمْـد، وهُوَ على كلّ شَيءٍ قدير ، رَبِّ
+                                أسْـأَلُـكَ خَـيرَ ما في هـذا اليوم وَخَـيرَ ما بَعْـدَه ، وَأَعـوذُ بِكَ مِنْ شَـرِّ ما
+                                في هـذا اليوم وَشَرِّ ما بَعْـدَه، رَبِّ أَعـوذُبِكَ مِنَ الْكَسَـلِ وَسـوءِ الْكِـبَر ،
+                                رَبِّ أَعـوذُ بِكَ مِنْ عَـذابٍ في النّـارِ وَعَـذابٍ في القَـبْر.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix row">
+
+
+                <div class="counter col-3 countt">
+
+                    <button class="btn btn-success btn-lg count">
+
+                        3
+                    </button>
+                    <div id="icon">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </div>
+
+
+                </div>
+                <div class="zekr col-9 mt-5 mb-5">
+                    <div style="height: 155px;">
+                        <div class="zekr pt-5">
+                            <div dir="rtl">اللّهـمَّ أَنْتَ رَبِّـي لا إلهَ إلاّ أَنْتَ ، خَلَقْتَنـي وَأَنا
+                                عَبْـدُك ،
+                                وَأَنا عَلـى عَهْـدِكَ وَوَعْـدِكَ ما اسْتَـطَعْـت ، أَعـوذُبِكَ مِنْ شَـرِّ ما
+                                صَنَـعْت
+                                ، أَبـوءُ لَـكَ بِنِعْـمَتِـكَ عَلَـيَّ وَأَبـوءُ بِذَنْـبي فَاغْفـِرْ لي فَإِنَّـهُ
+                                لا
+                                يَغْـفِرُ الذُّنـوبَ إِلاّ أَنْتَ .
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix row">
+
+
+                <div class="counter col-3 countt">
+
+                    <button class="btn btn-success btn-lg count">
+
+                        3
+                    </button>
+                    <div id="icon">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </div>
+
+
+                </div>
+                <div class="zekr col-9">
+                    <div style="height: 155px;">
+                        <div class="zekr pt-5">
+                            <div dir="rtl">رَضيـتُ بِاللهِ رَبَّـاً وَبِالإسْلامِ ديـناً وَبِمُحَـمَّدٍ صلى الله
+                                عليه
+                                وسلم نَبِيّـاً.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix row">
+
+
+                <div class="counter col-3 countt">
+
+                    <button class="btn btn-success btn-lg count">
+
+                        3
+                    </button>
+                    <div id="icon">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </div>
+
+
+                </div>
+                <div class="zekr col-9 mt-5 mb-5">
+                    <div class="mb-5">
+                        <div class="zekr pt-5">
+                            <div dir="rtl">
+                                اللّهُـمَّ إِنِّـي أسْـأَلُـكَ العَـفْوَ وَالعـافِـيةَ في الدُّنْـيا وَالآخِـرَة ،
+                                اللّهُـمَّ إِنِّـي أسْـأَلُـكَ العَـفْوَ وَالعـافِـيةَ في ديني وَدُنْـيايَ وَأهْـلي
+                                وَمالـي ، اللّهُـمَّ اسْتُـرْ عـوْراتي وَآمِـنْ رَوْعاتـي ، اللّهُـمَّ احْفَظْـني مِن
+                                بَـينِ يَدَيَّ وَمِن خَلْفـي وَعَن يَمـيني وَعَن شِمـالي ، وَمِن فَوْقـي ، وَأَعـوذُ
+                                بِعَظَمَـتِكَ أَن أُغْـتالَ مِن تَحْتـي.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix row">
+
+
+                <div class="counter col-3 countt">
+
+                    <button class="btn btn-success btn-lg count">
+
+                        3
+                    </button>
+                    <div id="icon">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </div>
+
+
+                </div>
+                <div class="zekr col-9">
+                    <div style="height: 155px;">
+                        <div class="zekr pt-5">
+                            <div dir="rtl">
+                                اللّهُـمَّ إِنّـي أَعـوذُ بِكَ مِنَ الْكُـفر ، وَالفَـقْر ، وَأَعـوذُ بِكَ مِنْ عَذابِ
+                                القَـبْر ، لا إلهَ إلاّ أَنْـتَ.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix row">
+
+
+                <div class="counter col-3 countt">
+
+                    <button class="btn btn-success btn-lg count">
+
+                        3
+                    </button>
+                    <div id="icon">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </div>
+
+
+                </div>
+                <div class="zekr col-9 mt-5 mb-5">
+                    <div style="height: 155px;">
+                        <div class="zekr pt-5">
+                            <div dir="rtl">
+                                أَصْبَـحْـنا وَأَصْبَـحْ المُـلكُ للهِ رَبِّ العـالَمـين ، اللّهُـمَّ إِنِّـي
+                                أسْـأَلُـكَ خَـيْرَ هـذا الـيَوْم ، فَـتْحَهُ ، وَنَصْـرَهُ ، وَنـورَهُ وَبَـرَكَتَـهُ ،
+                                وَهُـداهُ ، وَأَعـوذُ بِـكَ مِـنْ شَـرِّ ما فـيهِ وَشَـرِّ ما بَعْـدَه.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix row">
+
+
+                <div class="counter col-3 countt">
+
+                    <button class="btn btn-success btn-lg count">
+
+                        3
+                    </button>
+                    <div id="icon">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </div>
+
+
+                </div>
+                <div class="zekr col-9 mt-5 mb-5">
+                    <div style="height: 155px;">
+                        <div class="zekr pt-5">
+                            <div dir="rtl">
+                                اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ الْهَمِّ وَالْحَزَنِ، وَأَعُوذُ بِكَ مِنْ الْعَجْزِ
+                                وَالْكَسَلِ، وَأَعُوذُ بِكَ مِنْ الْجُبْنِ وَالْبُخْلِ، وَأَعُوذُ بِكَ مِنْ غَلَبَةِ
+                                الدَّيْنِ، وَقَهْرِ الرِّجَالِ.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+    <!-- ---------------------------------------------------------------------------- -->
+    <div class="container " id="azkarElmasa" style="display: none;">
+        <header class="col-xs-8 col-sm-12 text-center  mt-3">
+            <div class="p-3 text-white">أذكارالمساء</div>
+        </header>
+        <div class="card text-center   p-3 mb-1" style="direction: rtl;">
+            <div class="mix row ">
+                <div class="counter col-3 countt">
+
+                    <button class="btn btn-success btn-lg count">
+
+                        3
+                    </button>
+                    <div id="icon">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </div>
+
+
+                </div>
+                <div class="zekr col-9 mb-5 ">
+                    <div style="height: 155px;">
+                        <div class="zekr">
+                            <div dir="rtl ">أَعُوذُ بِاللهِ مِنْ الشَّيْطَانِ الرَّجِيمِ</div>
+                            اللّهُ لاَ إِلَـهَ إِلاَّ هُوَ الْحَيُّ الْقَيُّومُ لاَ تَأْخُذُهُ سِنَةٌ وَلاَ نَوْمٌ لَّهُ
+                            مَا فِي السَّمَاوَاتِ وَمَا فِي الأَرْضِ مَن ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلاَّ بِإِذْنِهِ
+                            يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلاَ يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ
+                            إِلاَّ بِمَا شَاء وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالأَرْضَ وَلاَ يَؤُودُهُ حِفْظُهُمَا
+                            وَهُوَ الْعَلِيُّ الْعَظِيمُ.
+
+                        </div>
+                        <div class="text-justify mt-2 mb-4 text-success">
+                            <span>من قالها حين يصبح أجير من الجن حتى يمسى ومن قالها حين يمسى أجير من الجن حتى
+                                يصبح.</span>
+                            <span class="fa fa-info-circle text-info"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix row ">
+
+                <div class="counter col-3 countt">
+
+                    <button class="btn btn-success btn-lg count">
+
+                        3
+                    </button>
+                    <div id="icon">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </div>
+
+
+                </div>
+                <div class="zekr col-9 mt-5 mb-5 ">
+                    <div style="height: 155px;">
+                        <div class="zekr">
+                            <div dir="rtl"><span class="text-warning d-block">بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم</span>
+                                قُلْ هُوَ ٱللَّهُ أَحَدٌ، ٱللَّهُ ٱلصَّمَدُ، لَمْ يَلِدْ وَلَمْ يُولَدْ، وَلَمْ يَكُن
+                                لَّهُۥ
+                                كُفُوًا أَحَدٌۢ.
+                            </div>
+
+                        </div>
+                        <div class="text-justify  text-success">
+                            <span>من قالها حين يصبح وحين يمسى كفته من كل شىء (الإخلاص والمعوذتين).</span>
+                            <span class="fa fa-info-circle text-info"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix row">
+
+
+                <div class="counter col-3 countt">
+
+                    <button class="btn btn-success btn-lg count">
+
+                        3
+                    </button>
+                    <div id="icon">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </div>
+
+
+                </div>
+                <div class="zekr col-9 mt-5 mb-5">
+                    <div style="height: 155px;">
+                        <div class="zekr">
+                            <div dir="rtl"><span class="text-warning d-block">بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم</span>
+                                قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ، مِن شَرِّ مَا خَلَقَ، وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ،
+                                وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِى ٱلْعُقَدِ، وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix row">
+
+
+                <div class="counter col-3 countt">
+
+                    <button class="btn btn-success btn-lg count">
+
+                        3
+                    </button>
+                    <div id="icon">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </div>
+
+
+                </div>
+                <div class="zekr col-9">
+                    <div style="height: 155px;">
+                        <div class="zekr">
+                            <div dir="rtl"><span class="text-warning d-block">بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم</span>
+                                قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ، مِن شَرِّ مَا خَلَقَ، وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ،
+                                وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِى ٱلْعُقَدِ، وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix row">
+
+
+                <div class="counter col-3 countt">
+
+                    <button class="btn btn-success btn-lg count">
+
+                        3
+                    </button>
+                    <div id="icon">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </div>
+
+
+                </div>
+                <div class="zekr col-9 mt-5 mb-5">
+                    <div style="height: 155px;">
+                        <div class="zekr pt-5">
+                            <div dir="rtl">
+                                أَمْسَيْـنا وَأَمْسـى المـلكُ لله وَالحَمدُ لله ، لا إلهَ إلاّ اللّهُ وَحدَهُ لا شَريكَ لهُ، لهُ المُـلكُ ولهُ الحَمْـد، وهُوَ على كلّ شَيءٍ قدير ، رَبِّ أسْـأَلُـكَ خَـيرَ ما في هـذهِ اللَّـيْلَةِ وَخَـيرَ ما بَعْـدَهـا ، وَأَعـوذُ بِكَ مِنْ شَـرِّ ما في هـذهِ اللَّـيْلةِ وَشَرِّ ما بَعْـدَهـا ، رَبِّ أَعـوذُبِكَ مِنَ الْكَسَـلِ وَسـوءِ الْكِـبَر ، رَبِّ أَعـوذُ بِكَ مِنْ عَـذابٍ في النّـارِ وَعَـذابٍ في القَـبْر.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix row">
+
+
+                <div class="counter col-3 countt">
+
+                    <button class="btn btn-success btn-lg count">
+
+                        3
+                    </button>
+                    <div id="icon">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </div>
+
+
+                </div>
+                <div class="zekr col-9 mt-5 mb-5">
+                    <div style="height: 155px;">
+                        <div class="zekr pt-5">
+                            <div dir="rtl">اللّهـمَّ أَنْتَ رَبِّـي لا إلهَ إلاّ أَنْتَ ، خَلَقْتَنـي وَأَنا
+                                عَبْـدُك ،
+                                وَأَنا عَلـى عَهْـدِكَ وَوَعْـدِكَ ما اسْتَـطَعْـت ، أَعـوذُبِكَ مِنْ شَـرِّ ما
+                                صَنَـعْت
+                                ، أَبـوءُ لَـكَ بِنِعْـمَتِـكَ عَلَـيَّ وَأَبـوءُ بِذَنْـبي فَاغْفـِرْ لي فَإِنَّـهُ
+                                لا
+                                يَغْـفِرُ الذُّنـوبَ إِلاّ أَنْتَ .
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix row">
+
+
+                <div class="counter col-3 countt">
+
+                    <button class="btn btn-success btn-lg count">
+
+                        3
+                    </button>
+                    <div id="icon">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </div>
+
+
+                </div>
+                <div class="zekr col-9">
+                    <div style="height: 155px;">
+                        <div class="zekr pt-5">
+                            <div dir="rtl">رَضيـتُ بِاللهِ رَبَّـاً وَبِالإسْلامِ ديـناً وَبِمُحَـمَّدٍ صلى الله
+                                عليه
+                                وسلم نَبِيّـاً.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix row">
+
+
+                <div class="counter col-3 countt">
+
+                    <button class="btn btn-success btn-lg count">
+
+                        3
+                    </button>
+                    <div id="icon">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </div>
+
+
+                </div>
+                <div class="zekr col-9 mt-5 mb-5">
+                    <div class="mb-5">
+                        <div class="zekr pt-5">
+                            <div dir="rtl">
+                                اللّهُـمَّ إِنِّـي أسْـأَلُـكَ العَـفْوَ وَالعـافِـيةَ في الدُّنْـيا وَالآخِـرَة ،
+                                اللّهُـمَّ إِنِّـي أسْـأَلُـكَ العَـفْوَ وَالعـافِـيةَ في ديني وَدُنْـيايَ وَأهْـلي
+                                وَمالـي ، اللّهُـمَّ اسْتُـرْ عـوْراتي وَآمِـنْ رَوْعاتـي ، اللّهُـمَّ احْفَظْـني مِن
+                                بَـينِ يَدَيَّ وَمِن خَلْفـي وَعَن يَمـيني وَعَن شِمـالي ، وَمِن فَوْقـي ، وَأَعـوذُ
+                                بِعَظَمَـتِكَ أَن أُغْـتالَ مِن تَحْتـي.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix row">
+
+
+                <div class="counter col-3 countt">
+
+                    <button class="btn btn-success btn-lg count">
+
+                        3
+                    </button>
+                    <div id="icon">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </div>
+
+
+                </div>
+                <div class="zekr col-9">
+                    <div style="height: 155px;">
+                        <div class="zekr pt-5">
+                            <div dir="rtl">
+                                اللّهُـمَّ إِنّـي أَعـوذُ بِكَ مِنَ الْكُـفر ، وَالفَـقْر ، وَأَعـوذُ بِكَ مِنْ عَذابِ
+                                القَـبْر ، لا إلهَ إلاّ أَنْـتَ.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix row">
+
+
+                <div class="counter col-3 countt">
+
+                    <button class="btn btn-success btn-lg count">
+
+                        3
+                    </button>
+                    <div id="icon">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </div>
+
+
+                </div>
+                <div class="zekr col-9 mt-5 mb-5">
+                    <div style="height: 155px;">
+                        <div class="zekr pt-5">
+                            <div dir="rtl">
+                                أَمْسَيْنا وَأَمْسَى الْمُلْكُ للهِ رَبِّ الْعَالَمَيْنِ، اللَّهُمَّ إِنَّي أسْأَلُكَ خَيْرَ هَذَه اللَّيْلَةِ فَتْحَهَا ونَصْرَهَا، ونُوْرَهَا وبَرَكَتهَا، وَهُدَاهَا، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فيهِا وَشَرَّ مَا بَعْدَهَا.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix row">
+
+
+                <div class="counter col-3 countt">
+
+                    <button class="btn btn-success btn-lg count">
+
+                        3
+                    </button>
+                    <div id="icon">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </div>
+
+
+                </div>
+                <div class="zekr col-9 mt-5 mb-5">
+                    <div style="height: 155px;">
+                        <div class="zekr pt-5">
+                            <div dir="rtl">
+                                اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ الْهَمِّ وَالْحَزَنِ، وَأَعُوذُ بِكَ مِنْ الْعَجْزِ
+                                وَالْكَسَلِ، وَأَعُوذُ بِكَ مِنْ الْجُبْنِ وَالْبُخْلِ، وَأَعُوذُ بِكَ مِنْ غَلَبَةِ
+                                الدَّيْنِ، وَقَهْرِ الرِّجَالِ.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/azkar.js"></script>
+</body>
+
+</html>
