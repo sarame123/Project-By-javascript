@@ -25,6 +25,58 @@ background-color: #3498db;
  
 
 }
+@media screen and (min-width: 0px) and (max-width: 600px) {
+
+  .count{
+    height:80%;
+     width:90%;
+    
+}
+  #icon{
+    position: absolute;
+    bottom:25%;
+    left: 15%;
+    width: 50px;
+    font-size:20px;
+    cursor: pointer;
+   
+  
+  }
+  
+  .btn-circle.btn-xl {
+    padding: 5px;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+ 
+}
+
+/* sm */
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+ 
+  .count{
+    height:80%;
+     width:90%;
+    
+}
+  #icon{
+    position: absolute;
+    bottom:25%;
+    left: 10%;
+    width: 50px;
+    font-size:20px;
+    cursor: pointer;
+   
+  
+  }
+  .btn-circle.btn-xl {
+    padding: 5px;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+}
 .btn-circle {
     width: 70px;
     height: 70px;
